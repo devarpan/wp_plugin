@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>WooCommerce Checkout Fields & Template Documentation</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="layout" class="">
+    <aside id="menu" class="menu">
+        <div class="logo">
+            <h1><a href="#">WCFT</a></h1>
+            <span>Wordpress Plugin</span>
+            <a id="menu-link" class="icon-menu" href="#menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li>
+                    <a href="#installation" class="">
+                        <i class="fa fa-cloud-upload"></i>
+                        <span>Installation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#update" class="">
+                        <i class="fa fa-upload"></i>
+                        <span>Installing Updates</span>
+                    </a>
+                </li>
+                <li class="hasSubmenu collapse">
+                    <a href="#config">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Plugin config</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#general">
+                                <i class="fa fa-cog"></i>
+                                <span>General settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#template">
+                                <i class="fa fa-desktop"></i>
+                                <span>Template</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pagebuilder">
+                                <i class="fa fa-building"></i>
+                                <span>Page Builder</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#drag-drop">
+                                <i class="fa fa-arrows"></i>
+                                <span>Drag - Drop</span>
+                            </a>
+                        </li>
+                          <li>
+                            <a href="#row">
+                                <i class="fa fa-tasks"></i>
+                                <span>Row settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#column">
+                                <i class="fa fa-th"></i>
+                                <span>Column settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#elements">
+                                <i class="fa fa-tags"></i>
+                                <span>Elements settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#buildtemplate">
+                                <i class="fa fa-question"></i>
+                                <span>How to build template</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#conditional">
+                                <i class="fa fa-question"></i>
+                                <span>How to use conditional/logic option</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hasSubmenu collapse">
+                    <a href="#generalinformation" class="">
+                        <i class="fa fa-info-circle"></i>
+                        <span>General information</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#gi-help">
+                                <i class="fa fa-ambulance"></i>
+                                <span>Need help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gi-bug">
+                                <i class="fa fa-bug"></i>
+                                <span>Report a bug</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gi-credits">
+                                <i class="fa fa-trophy"></i>
+                                <span>Credits</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- /#menu -->
+
+    <section id="main">
+<!--         <nav class="slideshow-bar">
+            
+            <a id="scrolltop" href="#">Top &uarr;</a>
+        </nav> -->
+        <!-- /.slideshow-bar -->
+
+        <header class="header content">
+            <div>
+                <h1>WooCommerce Checkout Fields & Template Documentation</h1>
+                <small class="version">Version 1.0</small>
+                <p>Thank you very much for purchasing our plugin. It is built with the latest version of Wordpress (4.2), and we will update it to next version. If you have any questions that aren’t covered in this article, please post your question  <a href="mailto:support@comfythemes.com?subject=Customization&amp;body=Purchase code:">click here</a> .</p>
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <section id="installation" class="content slide">
+            <div>
+                
+                <h2>Installation</h2>
+                <p>To install WooCommerce Checkout Fields & Template Documentation, is not much different to installing any other (free) WordPress plugin, so you might be familiar with this process already. If not, please follow instructions below. </p>
+              <p>You can install by using WordPress uploader or using FTP</p>
+              <h4>WordPress plugin uploader</h4>
+              <ol>
+                <li>Log into your website </li>
+                <li>From admin menu, hover to plugin then click <mark>Add new</mark></li>
+                <li>Click <mark>Upload</mark></li>
+                <li>Browse to the woocommerce-checkout-fields-templates zip file (file that you extract after download from Codecanyon). </li>
+                <li>Click <mark>Install now</mark> and wait while plugin is uploaded to your server </li>
+              </ol>
+
+              <h4>FTP</h4>
+              <p>You can also install Panpan via FTP</p>
+              <ol>
+                <li>Browse to the plugin's zip file (it is located in the folder you've downloaded from CodeCanyon) and extract that file, you will get folder named "woocommerce-checkout-fields-templates"</li>
+                <li>Open your FTP program, FTP into your site and navigate to the <code>wp-content/plugins/</code> directory</li>
+                <li>Upload <code>woocommerce-checkout-fields-templates</code> folder to this directory</li>
+                <li>Navigate to your Control Panel: Plugins</li>
+                <li>Under Panpan, click Activate</li>
+              </ol>
+
+            </div>
+        </section>
+        <!-- #installation -->
+
+        <section id="update" class="content slide">
+            <div>
+                <h2>Installing Updates</h2>
+                  <p>When plugin has a bug fixes or enhancements, you will be notified to upgrade.</p>
+                  <p>Installing updates is just involves replacing the old plugin files with the new ones. It's always a good idea to backup everything before you upgrade, especially if you have made any changes to Panpan's files, as the upgrade will overwrite all files. Configure that you saved though WordPress admin will all remain intact.</p>
+
+                  <h4>Backing Up</h4>
+                  <ol>
+                    <li>It is always a good idea to back up your plugin before making any changes</li>
+                    <li>Open your FTP program and FTP into your site and navigate to the <code>wp-content/plugins/</code> directory.</li>
+                    <li>Download the <code>woocommerce-checkout-fields-templates</code> folder and save it as a backup</li>
+                  </ol>
+
+                
+              
+              <h4>Manual update</h4>
+              <ol>
+                <li>Download the new version of the plugin from CodeCanyon</li>
+
+                <li>Browse to the plugin's zip file (it is located in the folder you've downloaded from CodeCanyon) and extract that file, you will get folder named <code>woocommerce-checkout-fields-templates</code></li>
+
+                <li>Switch to your FTP program, FTP into your site and navigate to the <code>wp-content/plugins/</code> directory.</li>
+                <li>Transfer the new <code>woocommerce-checkout-fields-templates</code> folder into the wp-content/plugins/ directory on your server, overwrite the existing one.</li>
+                <li>Ensure that your permissions are set properly on the <code>plugins/woocommerce-checkout-fields-templates</code> directory. If your server can't read the files, you might run into errors. This can happen depending on how your FTP account is set up.</li>
+              </ol>
+              <p>Note: If you are running a local server, just copy and override the files.</p>
+            </div>
+        </section>
+        <!-- #update -->
+
+        <section id="config" class="content slide">
+            <div>
+                <h2>Plugin config</h2>
+            </div>
+        </section>
+        <!-- /#config -->
+
+        <section id="general" class="content slide">
+            <div>
+                <h2>General setting</h2>
+
+                    <h4>Newsletter - WPML</h4>
+                    
+                    <p>At this stage, you will be very first time to choose the templates for your checkout page, we have created default and set for you the <code>modern</code> template. </p> 
+
+                    <p><mark>NewsLetter</mark> turn on - off if you need to collect user's email for email marketing </p>
+                    <ol>
+                        <p>You will be able to collect your customer's email if they check on the checkbox while they checkout at very bottom of the page. </p>
+
+                        Then, the email will be stored to the database or service if you're using, here's the service plugin supported:<mark>Mailchimp</mark>, <mark>aWeber</mark>, <mark>Getresponse</mark>
+                          
+                    </ol>
+                    <p><mark>WPML</mark> Multilanguage for your checkout page </p>
+                    <ol>If you're using <mark>WPML</mark> for your site, we will auto scan and get active languages, and you will be able to add translationg for corresponding words, labels, titles, placeholder and others words on your checkout page.</ol>
+
+                   
+            </div>
+        </section>
+        <!-- /#general -->
+
+        <section id="template" class="content slide">
+            <div>
+                <h2>Template Select </h2>
+                
+                    <h4>How to active template </h4>
+                    <p>On each template will have different preview image and its name, to select your desire template, please follow:</p>
+
+                    <ol>
+                        <li>Hover the mouse to template, select the options, <mark>On</mark> or <mark>Off</mark> on each tab</li> 
+                        <li>Click on <code>Active template</code> on the bottom button right below the screen. </li> 
+                    </ol>
+
+                    <p>After click on <code>Active template</code>, you wil be redirected to <mark>steps 2</mark>, where you will be able to select necessary fields, remove fields, add new custom fields, change the look & feel.</p> 
+                
+            </div>
+        </section>
+        <!-- /#background -->
+
+        <section id="pagebuilder" class="content slide">
+            <div>
+                <h2>Using Checkout Page Builder </h2>
+                <p>This is the most important part of the page, you need to follow carefully to have the detailed instruction, and your checkout page will work perfectly.</p>
+                 <h4>Left sidebar </h4>
+                 <p>You will see on your screen a sidebar, where contain all the elements, from basic to advanced elements for your checkout page. There's 3 part of the sidebar, we will list them for you here and an overview about those parts.</p>
+                 <ol>
+                    <li>Default Blocks</li>
+                   <p> This part contain all the basic fields of WooCommerce, like: <mark>Billing fields</mark>, <mark>Shipping fields</mark>, <mark>Account - Login</mark>, <mark>Checkout Method</mark>, <mark>Order overview</mark></p>
+                    <li>Sidebar</li>
+                     <p> This part represent for the sidebar, where you can drag - drop widgets into those sidebars at the widget page of WordPress.</p>
+                    <li>Custom Fields</li>
+                    <p>Custom fields allow you to add as many fields as you want, we currently supported: <mark>Title</mark>,<mark>Radio</mark>,<mark>Checkbox</mark>,<mark>Dropdown</mark>,<mark>Button</mark>,<mark>Date & Time</mark>,<mark>Text</mark>,<mark>Text area</mark>,<mark>Email</mark>,<mark>Phone</mark>,<mark>File upload</mark></p> 
+                 </ol>    
+                <h4>Right sidebar</h4>
+                <p>Right sidebar will be the place you <code>drop</code> the elements from the <code>left sidebar</code> to, it will contains all of your <code>row</code>, <code>columns</code>, <code>elements</code>.
+               </p>
+               <img src="">
+
+            </div>
+        </section>
+        <!-- /#subscribe -->
+
+        <section id="drag-drop" class="content slide">
+            <div>
+                <h2>Drag - Drop fields</h2>
+                <h4>How to drag drop fields into your checkout page</h4>
+                <p>Please watch the video below to see how it work.</p>
+                 <video width="100%" height="auto" showcontrol="true" controls="true">
+                                  <source src="vid/drag-drop.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                                </video>
+            </div>
+
+</section>
+<section id="row" class="content slide">
+  <div>
+                <h2>Row settings</h2>
+                <h4>Row options</h4>
+                Row will be the wrapper for entire your <code>column</code> & <code>fields</code>, on each row, you can add multiple fields and so on.<br />
+                <mark style="background: #007bb6">Row distinction:</mark> You will know it's row by <mark style="border: 1px dashed #007bb6; padding: 3px; background: none;color: black">dashed blue border</mark>
+                <p></p>
+                <p>Available options:
+                <ol>
+                <li>
+                    <mark>Move row:</mark> click on icon <i class="fa fa-arrows blue"></i> to move the position of current row.
+                </li>
+                   <li><mark>Column devider:</mark> click on icon <i class="fa fa-align-justify blue" title="Edit this row"></i> to select the number of column for your row, if the pre-made column doesnt fit to your need, click on <img src=""> to input the custom column value.</li>
+                    <li><mark>Row edit:</mark> click on icon <i class="fa fa-pencil blue" title="Display options"></i> to open the setting for row, you can choose the custom <code>ID</code>, <code>class</code>, <code>row type</code>.</li>
+                    <li><mark>Row styling:</mark> You can input the <code>padding</code>, <code>margin</code> or <code>border</code> by <code>px or %</code> for row by click on icon <i class="fa fa-paint-brush blue" title="Style this row"></i>.
+                    <li><mark>Add row:</mark> Click on icon <i class="fa fa-plus blue" title="Add new column"></i> to add new column quickly</li>
+
+                     <li><mark>Remove row:</mark> Click on icon <i class="fa fa-trash blue"></i> to remove current column.</li>
+                
+                </ol>
+                </p>
+            </div>
+</section>
+
+<section id="column" class="content slide">
+            <div>
+                <h2>Column settings</h2>
+                <h4>Columns options</h4>
+                Row will be the wrapper for entire your <code>fields</code>, you can add unlimited columns on your row.<br />
+                <mark style="background: #cb2027">Column distinction:</mark> You will know it's row by <mark style="border: 1px dashed #cb2027; padding: 3px; background: none;color: black">dashed red border</mark>
+                <p></p>
+                <p>Available options.
+                <ol>
+                <li>
+                    <mark>Move Column:</mark> click on icon <i class="fa fa-arrows red"></i> to move the position of current column.
+                </li>
+                    <li><mark>Column edit:</mark> click on icon <i class="fa fa-pencil red" title="Display options"></i> to open the setting for column, you can choose the custom <code>ID</code>, <code>class</code>, <code>column width</code>.</li>
+                    <li><mark>Column styling:</mark> You can input the <code>padding</code>, <code>margin</code> or <code>border</code> by <code>px or %</code> for row by click on icon <i class="fa fa-paint-brush red" title="Style this row"></i>.</li>
+                    <li><mark>Add column:</mark> Click on icon <i class="fa fa-plus red" title="Add new column"></i> to add new column quickly</li>
+
+                     <li><mark>Remove column:</mark> Click on icon <i class="fa fa-trash red"></i> to remove current column.</li>
+                </ol>
+                </p>
+            </div>
+</section>
+<section id="elements" class="content slide">
+
+            <div>
+                <h2>Element settings</h2>
+                <h4>Elements - Global Options</h4>
+                By default, global options has 2 tab, <mark>General options</mark> & <mark>Advanced options</mark>
+                <ol>
+                    <li><mark>General options:</mark> This is the options appear across all the fields, they're: <code>Title</code>,<code>Placeholder</code>, <code>Field ID</code>, <code>require (checkbox)</code>, <code>Display field on email (checkbox)</code> and <code>Display field on order detail (checkbox)</code>.</li>
+                    <li><mark>Advanced options:</mark> On this tab, you can add or edit the <code>class</code> of the fields, you're also can <code>enable the conditional</code> for that field, which will make field <code>show/hide</code> on specific conditions.</li>
+
+                    <ol>
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Extend</mark> With custom fields, there's <code>pricing</code> option, you can add an amount of money for that field, that mean user will be charged fees if they choose, type in, or select that field.</span><br /></li></ol>
+
+
+                </ol>
+                <h4>Elements - Specific Options</h4>
+                <p>
+                <ol>
+                   <li> <mark>Title:</mark> title tag is the option which you can choose from <code>h1</code> to <code>h6</code>.<br /></li>
+
+                   <li> <mark>Radio:</mark> <code>single</code> selection. The values should be put in as this pair: <code>value(spacebar):(spacebar)label</code>, separate between pairs by <code>enter</code>.<br /></li>
+
+                    <ol>
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Extend</mark> You can make label show up with images instead of text. To do that, check <code>image</code> box, and put in value pair as: <code>value(spacebar):(spacebar)url_to_image</code>.</span> Exp: <code>hi : http://demo.comfythemes.com/woocommerce-checkout-template/wp-content/uploads/2015/07/card-01.png</code><br /></li></ol>
+
+
+                    <li> <mark>Checkbox:</mark> The <code>multiple</code> selection. The values should be put in as this pair: <code>value(spacebar):(spacebar)label</code>, separate between pairs by <code>enter</code>. Exp: <code>hi : Hello World</code><br /></li>
+
+                    <ol>
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Extend</mark> You can make label show up with images instead of text. To do that, check <code>image</code> box, and put in value pair as: <code>value(spacebar):(spacebar)url_to_image</code></span>. Exp: <code>hi : http://demo.comfythemes.com/woocommerce-checkout-template/wp-content/uploads/2015/07/card-01.png</code><br /></li></ol>
+
+                    <li> <mark>Dropdown:</mark> The <code>multiple & single</code> selection. The values should be put in as this pair: <code>value(spacebar):(spacebar)label</code>, separate between pairs by <code>enter</code>. Exp: <code>hi : Hello World</code><br /></li>
+
+                    <ol>
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Extend</mark> You can enable <code>multiple</code> select by check box <code>Multiple select</code>.</span><br /></li></ol>
+
+                    <li> <mark>Date picker:</mark> will enable user to choose the date on the calendar.
+
+                    <ol>
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Style</mark> We have created several style for the calendar, you can choose from the <code>style</code> dropdown, the prebuilt styles include <code>Cangas</code>, <code>Latoja</code>, <code>Lugo</code>, <code>Melon</code>, <code>Nigran</code>, <code>Santiago</code>, <code>Siena</code>, <code>Vigo</code>.</span><br /></li>
+
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Min - Max date</mark> By select the min date, max date, your customer only can choose the the date range you choose. Exp: <code>min: 01/18/2015</code>, <code>max: 01/22/2015</code>, so your user only can choose the date from the date <code>18 to 22</code></li>
+
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Except weekend</mark> <code>enable</code> if you dont want to deliver your product on weekends date (Saturday and Sunday).</li>
+
+                    <li><span style="padding-left: 20px;"><mark><i class="fa fa-info"></i> Specific dates</mark> <code>enable</code> if you only deliver your products on specific dates.</li>
+
+                    </ol>
+
+                    <li> <mark>Text field:</mark> Single line text input field.<br /></li>
+                    <li> <mark>Text area:</mark> Multiple line text input field, width and height extandable.<br /></li>
+                    <li> <mark>Email:</mark> Validate the input with <code>email</code> type.<br /></li>
+                    <li> <mark>Phone:</mark> Validate the input with <code>number</code> type.<br /></li>
+                     <li> <mark>File upload:</mark> Allow user to upload file via checkout page, the selected file only uploads when order is created, no matter the order status is success or pending.<br /></li>
+                     <ul>
+                     	<ol>
+                     		<li><mark>Note</mark>: For your secure, we made the upload field check the files uploaded with header checking, and it require PHP Extension: <code>fileinfo</code>. Please check with your hosting provider if it doesnt load, your upload form wont work.</li>
+                     	</ol>
+
+                     </ul>
+</ol>
+
+ </p>
+                     <h4>Elements - Advanced Options</h4>
+                     <p>
+                     	<ol>
+                     		<li><mark>Pricing</mark> this will enable you to charge user small fees if they choose/type in/select that field. Image below will best describe how it work.
+                     		</li>
+
+                     		<li><mark>Hide/appear as user role</mark> This option is built to <code>show</code> or <code>hide</code> field to specific user roles.
+                     		</li>
+
+
+                     	</ol>
+
+
+                     </p>
+
+               
+
+            </div>
+
+        </section>
+        <!-- /#about -->
+
+        <section id="buildtemplate" class="content slide">
+            <div>
+                <h2>How to build template</h2>
+                <p>We will guide you how to build template from the ground.</p>
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/yZ7TmK5CPbE" frameborder="0" allowfullscreen></iframe>
+                Please note the following detail:
+                <mark>Class (most important)</mark>:
+                <ul>
+                    <li>
+                        Billing column must be filled with class <mark>ossvn-billing-details</mark>
+                    </li>
+                    <li>
+                        Shipping column must be filled with class <mark>woocommerce-shipping-fields</mark>
+                    </li>
+                    <li>
+                        Order review and Payment Method must be filled with class <mark>order_review</mark>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /#access -->
+
+        <section id="conditional" class="content slide">
+            <div>
+                <h2>How to use conditional/logic option</h2>
+                <p>By checking <code>Enable conditional logic</code>, you will select the condition for that field, for easier, please follow the video.</p>
+                 <video width="100%" height="auto" showcontrol="true" controls="true">
+                                  <source src="vid/logic-field.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                                </video>
+                
+            </div>
+        </section>
+        <!-- /#seo -->
+
+        
+        
+        <section id="generalinformation" class="content slide">
+            <div>
+                <h2>Need your checkout page built?</h2>
+                <p>We do provide customization service to make your checkout page look awesome, here's the service we can help you with</p>
+                <ul>
+                <li>
+                	<mark>Brand new design</mark>: We will design your checkout page with your idea, starting from <mark>$150</mark>
+                </li>
+                 <li>
+                	<mark>Customize Current Templates</mark>: We will customize your checkout page base on the currently templates, form <mark>$50</mark>
+                </li>
+                <li>
+                	<mark>Develop custom functions</mark>: We will build specific functions for your checkout page base on the currently templates, form <mark>$90</mark>
+                </li>
+                </ul>
+                <h4>How to get my requirements done?</h4>
+                <ul><li>Have an list of your idea or requirement, please describe it as specific as you can, it will push your requirement done faster </li>
+                <li>Email us at: <a href="mailto:support@comfythemes.com?subject=Customization&amp;body=Purchase code:">click here</a> </li></ul>
+            </div>
+        </section>
+        <!-- /#General information -->
+        
+        <section id="gi-help" class="content slide">
+            <div>
+                <h2>Need help?</h2>
+                <p>If you need help with setting up the template, please mail us at <a href="mailto:support@comfythemes.com?subject=My problem about&amp;body=Purchase code:">click here</a>
+                <ul class="arrowlist">
+                    <li>Before you ask a question please make sure to scan the menu and read the specific section of your question.</li>
+                    <li>If it's a specific HTML question, Google (or any other search engine) is your friend and probably a hundred times faster in replying.</li>
+                    <li>If it's possible, please provide a link to your (demo) website so our stuff are able to quickly scan for possible issues.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- /#Need help -->
+        
+        <section id="gi-bug" class="content slide">
+            <div>
+                <h2>Report a bug</h2>
+                <p>If you found a bug, please <a href="mailto:support@comfythemes.com?subject=My problem about&amp;body=Purchase code:">send us an e-mail</a> with a (small) description of the issue. Your help is always apreciated.</p>
+            </div>
+        </section>
+        <!-- /#Report a bug -->
+        
+        
+
+        <footer id="footer">
+            <p>&copy; 2015 <a href="http://comfythemes.com" target="_blank">Comfy Theme</a>. All Rights Reserved.</p>
+        </footer>
+        <!-- /#footer -->
+
+    </section>
+        <!-- /#main -->
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
